@@ -180,7 +180,7 @@ public class FTBUltimine
 
 			if (!player.isCreative())
 			{
-				player.addExhaustion((float) (FTBUltimineConfig.exhaustionPerBlock * 0.005D));
+				player.addExhaustion((float) (FTBUltimineConfig.exhaustionPerBlock * 0.000005D));
 
 				if (player.getFoodStats().getFoodLevel() <= 0)
 				{
@@ -263,7 +263,7 @@ public class FTBUltimine
 					if (!player.isCreative())
 					{
 						player.getHeldItemMainhand().damageItem(1, player, brokenItemHandler);
-						player.addExhaustion((float) (FTBUltimineConfig.exhaustionPerBlock * 0.005D));
+						player.addExhaustion((float) (FTBUltimineConfig.exhaustionPerBlock * 0.000005D));
 
 						if (brokenItemHandler.isBroken || player.getFoodStats().getFoodLevel() <= 0)
 						{
